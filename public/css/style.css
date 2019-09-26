@@ -320,7 +320,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/01%20finly.png);
+    background-image: url('/images/opt/01finly.png');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;

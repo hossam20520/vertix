@@ -21,4 +21,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'DashboardController@index')->name('home');
+
+Route::get('/service', function(){
+return view('service');
+});
+
+Route::get('/dahboard', 'DashboardController@DashShow');
+
+
+Route::post('/save_projects', 'DashboardController@SaveProjects')->name('save_projects');
+
+Route::post('/upload_image', 'DashboardController@uploadMainImages')->name('upload_image');
+
